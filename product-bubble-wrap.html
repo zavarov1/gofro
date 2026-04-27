@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пузирькова плівка - UFiPak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-box" style="font-size: 2rem; color: var(--primary-color);"></i>
+                <span class="logo-text">UFiPak</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-uk="Головна" data-en="Home" data-pl="Strona główna"></a></li>
+                <li><a href="products.html" data-uk="Продукти" data-en="Products" data-pl="Produkty"></a></li>
+                <li><a href="services.html" data-uk="Послуги" data-en="Services" data-pl="Usługi"></a></li>
+                <li><a href="about.html" data-uk="Про нас" data-en="About" data-pl="O nas"></a></li>
+                <li><a href="contact.html" data-uk="Контакти" data-en="Contact" data-pl="Kontakt"></a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="language-selector">
+                <button onclick="switchLanguage('uk')" class="lang-btn active">УК</button>
+                <button onclick="switchLanguage('en')" class="lang-btn">EN</button>
+                <button onclick="switchLanguage('pl')" class="lang-btn">PL</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="product-detail">
+            <div class="breadcrumb">
+                <a href="index.html" data-uk="Головна" data-en="Home" data-pl="Strona główna"></a> / 
+                <a href="products.html" data-uk="Продукти" data-en="Products" data-pl="Produkty"></a> / 
+                <span data-uk="Пузирькова плівка" data-en="Bubble Wrap" data-pl="Folia bąbelkowa"></span>
+            </div>
+
+            <div class="product-header">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=600" alt="Bubble Wrap">
+                </div>
+                <div class="product-info">
+                    <h1 data-uk="Пузирькова плівка" data-en="Bubble Wrap" data-pl="Folia bąbelkowa"></h1>
+                    <p class="product-description" data-uk="Легка та гнучка пузирькова плівка для максимального захисту крихких предметів. Ідеальна для електроніки, скла та посуду." data-en="Lightweight and flexible bubble wrap for maximum protection of fragile items. Perfect for electronics, glass, and dishes." data-pl="Lekka i elastyczna folia bąbelkowa do maksymalnej ochrony kruchych przedmiotów. Idealna do elektroniki, szkła i naczyń."></p>
+                    
+                    <div class="pricing-factors">
+                        <h3 data-uk="Чинники ціноутворення:" data-en="Pricing Factors:" data-pl="Czynniki ceny:"></h3>
+                        <ul>
+                            <li data-uk="Ширина рулону (500-1500 мм)" data-en="Roll width (500-1500 mm)" data-pl="Szerokość rolki (500-1500 mm)"></li>
+                            <li data-uk="Розмір пузиря (6-25 мм)" data-en="Bubble size (6-25 mm)" data-pl="Rozmiar bąbelka (6-25 mm)"></li>
+                            <li data-uk="Довжина рулону" data-en="Roll length" data-pl="Długość rolki"></li>
+                            <li data-uk="Товщина плівки" data-en="Film thickness" data-pl="Grubość folii"></li>
+                            <li data-uk="Кількість шарів" data-en="Number of layers" data-pl="Liczba warstw"></li>
+                            <li data-uk="Обсяг замовлення" data-en="Order volume" data-pl="Ilość zamówienia"></li>
+                        </ul>
+                    </div>
+
+                    <div class="examples">
+                        <h3 data-uk="Приклади реальних замовлень:" data-en="Real Order Examples:" data-pl="Przykłady rzeczywistych zamówień:"></h3>
+                        <div class="example-item">
+                            <p><strong data-uk="Замовлення #1:" data-en="Order #1:" data-pl="Zamówienie #1:"></strong> 
+                               <span data-uk="3 рулони, ширина 1000 мм, розмір пузиря 10 мм" data-en="3 rolls, width 1000 mm, bubble size 10 mm" data-pl="3 rolki, szerokość 1000 mm, rozmiar bąbelka 10 mm"></span></p>
+                            <p data-uk="Вартість: 280 грн за рулон" data-en="Cost: 280 UAH per roll" data-pl="Koszt: 280 UAH za rolkę"></p>
+                        </div>
+                        <div class="example-item">
+                            <p><strong data-uk="Замовлення #2:" data-en="Order #2:" data-pl="Zamówienie #2:"></strong> 
+                               <span data-uk="10 рулонів, ширина 1500 мм, розмір пузиря 15 мм" data-en="10 rolls, width 1500 mm, bubble size 15 mm" data-pl="10 rolek, szerokość 1500 mm, rozmiar bąbelka 15 mm"></span></p>
+                            <p data-uk="Вартість: 450 грн за рулон" data-en="Cost: 450 UAH per roll" data-pl="Koszt: 450 UAH za rolkę"></p>
+                        </div>
+                    </div>
+
+                    <div class="order-section">
+                        <h3 data-uk="Особливості:" data-en="Features:" data-pl="Cechy:"></h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-uk="Надійний амортизаційний матеріал" data-en="Reliable cushioning material" data-pl="Niezawodny materiał amortyzacyjny"></span></li>
+                            <li><i class="fas fa-check"></i> <span data-uk="Легко та зручно використовувати" data-en="Easy and convenient to use" data-pl="Łatwy i wygodny w użyciu"></span></li>
+                            <li><i class="fas fa-check"></i> <span data-uk="Переробляється" data-en="Recyclable" data-pl="Materiał do recyklingu"></span></li>
+                            <li><i class="fas fa-check"></i> <span data-uk="Універсальна для використання" data-en="Universal for use" data-pl="Uniwersalne do użytku"></span></li>
+                        </ul>
+                    </div>
+
+                    <a href="contact.html" class="cta-button"><i class="fas fa-envelope"></i> <span data-uk="Зв'язатися для замовлення" data-en="Contact to Order" data-pl="Skontaktuj się, aby zamówić"></span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-uk="© 2026 UFiPak. Всі права захищені." data-en="© 2026 UFiPak. All rights reserved." data-pl="© 2026 UFiPak. Wszelkie prawa zastrzeżone."></p>
+            <div class="footer-links">
+                <a href="index.html" data-uk="Головна" data-en="Home" data-pl="Strona główna"></a>
+                <a href="contact.html" data-uk="Контакти" data-en="Contact" data-pl="Kontakt"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

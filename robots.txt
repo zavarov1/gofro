@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: file:///c:/Users/We/Desktop/Гофрокартон/sitemap.xml
+
+# Блокировка для временных файлов и кэша
+Disallow: /*.tmp
+Disallow: /*.cache
+
+# Allow индексация всех основных страниц
+Allow: /*.html

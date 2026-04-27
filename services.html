@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Послуги UFiPak: консультація, дизайн, контроль якості та швидка доставка гофрокартону та упаковки по всьому світу.">
+    <title>UFiPak - Послуги | Гофрокартон та упаковка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навігація -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-box" style="font-size: 2rem; color: var(--primary-color);"></i>
+                <span class="logo-text">UFiPak</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Домівка</a></li>
+                <li><a href="products.html" class="nav-link">Продукти</a></li>
+                <li><a href="services.html" class="nav-link">Послуги</a></li>
+                <li><a href="about.html" class="nav-link">Про нас</a></li>
+                <li><a href="contact.html" class="nav-link">Контакти</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="uk">УК</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="pl">PL</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Героїчний розділ -->
+    <section id="home" class="hero" style="height: 40vh;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-en="Our Services" data-uk="Наші послуги" data-pl="Nasze usługi">Наші послуги</h1>
+            <p class="hero-subtitle" data-en="Comprehensive packaging solutions for your business" data-uk="Комплексні рішення упаковки для вашого бізнесу" data-pl="Kompleksowe rozwiązania opakowaniowe dla Twojego biznesu">Комплексні рішення упаковки для вашого бізнесу</p>
+        </div>
+    </section>
+
+    <!-- Послуги -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-en="Our Services" data-uk="Наші послуги" data-pl="Nasze usługi">Наші послуги</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-comments"></i></div>
+                    <h3 class="service-title" data-en="Consultation" data-uk="Консультація" data-pl="Konsultacja">Консультація</h3>
+                    <p class="service-text" data-en="Expert advice for your packaging needs" data-uk="Експертні поради щодо ваших потреб упаковки" data-pl="Fachowa rada w sprawie Twoich potrzeb opakowaniowych">Експертні поради щодо ваших потреб упаковки</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-paintbrush"></i></div>
+                    <h3 class="service-title" data-en="Design & Production" data-uk="Дизайн і виробництво" data-pl="Projektowanie i produkcja">Дизайн і виробництво</h3>
+                    <p class="service-text" data-en="Custom design with fast production turnaround" data-uk="Спеціальний дизайн з швидким терміном виробництва" data-pl="Niestandardowy projekt z szybkim czasem produkcji">Спеціальний дизайн з швидким терміном виробництва</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3 class="service-title" data-en="Quality Assurance" data-uk="Контроль якості" data-pl="Zapewnienie jakości">Контроль якості</h3>
+                    <p class="service-text" data-en="Strict quality standards on all products" data-uk="Суворі стандарти якості для всіх продуктів" data-pl="Surowe normy jakości dla wszystkich produktów">Суворі стандарти якості для всіх продуктів</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-truck-fast"></i></div>
+                    <h3 class="service-title" data-en="Fast Delivery" data-uk="Швидка доставка" data-pl="Szybka dostawa">Швидка доставка</h3>
+                    <p class="service-text" data-en="Reliable shipping to any location" data-uk="Надійна доставка в будь-яке місце" data-pl="Niezawodna dostawa do dowolnej lokalizacji">Надійна доставка в будь-яке місце</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p data-en="© 2026 UFiPak. All rights reserved." data-uk="© 2026 UFiPak. Всі права захищені." data-pl="© 2026 UFiPak. Wszystkie prawa zastrzeżone.">© 2026 UFiPak. Всі права захищені.</p>
+            <p><a href="index.html">← Повернутись на glavnu</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

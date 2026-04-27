@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Наша повна лінійка продуктів з гофрокартону та упаковочних матеріалів. Гофровані коробки, листи, брендована упаковка та спеціальні рішення.">
+    <title>UFiPak - Продукти | Гофрокартон та упаковка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навігація -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-box" style="font-size: 2rem; color: var(--primary-color);"></i>
+                <span class="logo-text">UFiPak</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Домівка</a></li>
+                <li><a href="products.html" class="nav-link">Продукти</a></li>
+                <li><a href="services.html" class="nav-link">Послуги</a></li>
+                <li><a href="about.html" class="nav-link">Про нас</a></li>
+                <li><a href="contact.html" class="nav-link">Контакти</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="uk">УК</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="pl">PL</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Героїчний розділ -->
+    <section id="home" class="hero" style="height: 40vh;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-en="Our Complete Product Range" data-uk="Наш асортимент продуктів" data-pl="Nasza pełna linia produktów">Наш асортимент продуктів</h1>
+            <p class="hero-subtitle" data-en="Premium corrugated cardboard and packaging solutions" data-uk="Преміум гофрокартон та рішення для упаковки" data-pl="Premium karton falista i rozwiązania opakowaniowe">Преміум гофрокартон та рішення для упаковки</p>
+        </div>
+    </section>
+
+    <!-- Продукти -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title" data-en="Our Products" data-uk="Наші продукти" data-pl="Nasze produkty">Наші продукти</h2>
+            <div class="carousel-container">
+                <div class="carousel-wrapper" id="productCarousel">
+                    <!-- Гофровані коробки -->
+                    <div class="carousel-item">
+                        <a href="product-corrugated-boxes.html" class="product-card">
+                            <div class="product-icon"><i class="fas fa-box"></i></div>
+                            <h3 class="product-name" data-en="Corrugated Boxes" data-uk="Гофровані коробки" data-pl="Pudełka z kartonu falistego"></h3>
+                            <p class="product-desc" data-en="Durable and reliable packaging boxes" data-uk="Міцні та надійні коробки для упаковки" data-pl="Wytrzymałe i niezawodne pudełka opakowaniowe"></p>
+                            <p class="view-more" data-en="View Details →" data-uk="Детальніше →" data-pl="Szczegóły →"></p>
+                        </a>
+                    </div>
+
+                    <!-- Кондитерські коробки -->
+                    <div class="carousel-item">
+                        <a href="product-Confectionery-Boxes.html" class="product-card">
+                            <div class="product-icon"><i class="fas fa-cookie-bite"></i></div>
+                            <h3 class="product-name" 
+                                data-en="Confectionery Boxes" 
+                                data-uk="Кондитерські коробки" 
+                                data-pl="Pudełka cukiernicze">
+                            </h3>
+                            <p class="product-desc" 
+                                data-en="Elegant packaging for cakes, desserts, and sweets" 
+                                data-uk="Елегантна упаковка для тортів, десертів та солодощів" 
+                                data-pl="Eleganckie opakowania na ciasta, desery i słodycze">
+                            </p>
+                            <p class="view-more" 
+                                data-en="View Details →" 
+                                data-uk="Детальніше →" 
+                                data-pl="Szczegóły →">
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Крафт-папір -->
+                    <div class="carousel-item">
+                        <a href="product-kraft-paper.html" class="product-card">
+                            <div class="product-icon"><i class="fas fa-rectangle-list"></i></div>
+                            <h3 class="product-name" data-en="Kraft Paper" data-uk="Крафт-папір" data-pl="Papier kraft"></h3>
+                            <p class="product-desc" data-en="Natural kraft paper for packaging" data-uk="Натуральна крафт-папір для упаковки" data-pl="Naturalny papier kraft do opakowań"></p>
+                            <p class="view-more" data-en="View Details →" data-uk="Детальніше →" data-pl="Szczegóły →"></p>
+                        </a>
+                    </div>
+
+                    <!-- Пінопластова упаковка -->
+                    <div class="carousel-item">
+                        <a href="product-foam-packaging.html" class="product-card">
+                            <div class="product-icon"><i class="fas fa-gift"></i></div>
+                            <h3 class="product-name" data-en="Foam Packaging" data-uk="Пінопластова упаковка" data-pl="Opakowanie z pianki"></h3>
+                            <p class="product-desc" data-en="Protective foam for fragile items" data-uk="Захисний пінопласт для крихких речей" data-pl="Ochronna pianka do delikatnych przedmiotów"></p>
+                            <p class="view-more" data-en="View Details →" data-uk="Детальніше →" data-pl="Szczegóły →"></p>
+                        </a>
+                    </div>
+
+                    <!-- Клейка стрічка -->
+                    <div class="carousel-item">
+                        <a href="product-adhesive-tape.html" class="product-card">
+                            <div class="product-icon"><i class="fas fa-shield"></i></div>
+                            <h3 class="product-name" data-en="Adhesive Tape" data-uk="Клейка стрічка" data-pl="Taśma klejąca"></h3>
+                            <p class="product-desc" data-en="Strong adhesive tape for sealing" data-uk="Міцна клейка стрічка для запечатування" data-pl="Mocna taśma klejąca do zapieczętowania"></p>
+                            <p class="view-more" data-en="View Details →" data-uk="Детальніше →" data-pl="Szczegóły →"></p>
+                        </a>
+                    </div>
+
+                    <!-- Пузирькова плівка -->
+                    <div class="carousel-item">
+                        <a href="product-bubble-wrap.html" class="product-card">
+                            <div class="product-icon"><i class="fas fa-scroll"></i></div>
+                            <h3 class="product-name" data-en="Bubble Wrap" data-uk="Пузирькова плівка" data-pl="Folia bąbelkowa"></h3>
+                            <p class="product-desc" data-en="Protective bubble wrap for shipping" data-uk="Захисна пузирькова плівка для доставки" data-pl="Ochronna folia bąbelkowa do wysyłki"></p>
+                            <p class="view-more" data-en="View Details →" data-uk="Детальніше →" data-pl="Szczegóły →"></p>
+                        </a>
+                    </div>
+
+                    <!-- Упаковувальна плівка -->
+                    <div class="carousel-item">
+                        <a href="product-packaging-film.html" class="product-card">
+                            <div class="product-icon"><i class="fas fa-gears"></i></div>
+                            <h3 class="product-name" data-en="Packaging Film" data-uk="Упаковувальна плівка" data-pl="Folia pakunkowa"></h3>
+                            <p class="product-desc" data-en="Durable wrapping film for pallets" data-uk="Міцна плівка для обгортання палет" data-pl="Trwała folia do owijania palet"></p>
+                            <p class="view-more" data-en="View Details →" data-uk="Детальніше →" data-pl="Szczegóły →"></p>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-nav carousel-prev" onclick="prevProduct()"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-nav carousel-next" onclick="nextProduct()"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="carousel-dots" id="productDots"></div>
+        </div>
+    </section>
+
+    <!-- Модальне вікно для продуктів -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProductModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p data-en="© 2026 UFiPak. All rights reserved." data-uk="© 2026 UFiPak. Всі права захищені." data-pl="© 2026 UFiPak. Wszystkie prawa zastrzeżone.">© 2026 UFiPak. Всі права захищені.</p>
+            <p><a href="index.html">← Повернутись на главну</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

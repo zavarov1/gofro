@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гофровані коробки - UFiPak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-box" style="font-size: 2rem; color: var(--primary-color);"></i>
+                <span class="logo-text">UFiPak</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-uk="Головна" data-en="Home" data-pl="Strona główna"></a></li>
+                <li><a href="products.html" data-uk="Продукти" data-en="Products" data-pl="Produkty"></a></li>
+                <li><a href="services.html" data-uk="Послуги" data-en="Services" data-pl="Usługi"></a></li>
+                <li><a href="about.html" data-uk="Про нас" data-en="About" data-pl="O nas"></a></li>
+                <li><a href="contact.html" data-uk="Контакти" data-en="Contact" data-pl="Kontakt"></a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="language-selector">
+                <button onclick="switchLanguage('uk')" class="lang-btn active">УК</button>
+                <button onclick="switchLanguage('en')" class="lang-btn">EN</button>
+                <button onclick="switchLanguage('pl')" class="lang-btn">PL</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="product-detail">
+            <div class="breadcrumb">
+                <a href="index.html" data-uk="Головна" data-en="Home" data-pl="Strona główna"></a> / 
+                <a href="products.html" data-uk="Продукти" data-en="Products" data-pl="Produkty"></a> / 
+                <span data-uk="Гофровані коробки" data-en="Corrugated Boxes" data-pl="Pudła falistowe"></span>
+            </div>
+
+            <div class="product-header">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1594662712514-73a5c7cf0df1?w=600" alt="Corrugated Boxes">
+                </div>
+                <div class="product-info">
+                    <h1 data-uk="Гофровані коробки" data-en="Corrugated Boxes" data-pl="Pudła falistowe"></h1>
+                    <p class="product-description" data-uk="Міцні, надійні гофровані коробки ідеальні для упаковки продуктів будь-якого розміру. Виготовлені з екологічно чистих матеріалів." data-en="Strong and reliable corrugated boxes ideal for packaging products of any size. Made from eco-friendly materials." data-pl="Solidne i niezawodne pudła falistowe idealne do pakowania produktów dowolnego rozmiaru. Wykonane z materiałów przyjaznych dla środowiska."></p>
+                    
+                    <div class="pricing-factors">
+                        <h3 data-uk="Чинники ціноутворення:" data-en="Pricing Factors:" data-pl="Czynniki ceny:"></h3>
+                        <ul>
+                            <li data-uk="Розмір: висота, ширина, глибина" data-en="Size: height, width, depth" data-pl="Rozmiar: wysokość, szerokość, głębokość"></li>
+                            <li data-uk="Кількість шарів гофрування (2-3 шари)" data-en="Number of corrugation layers (2-3 layers)" data-pl="Liczba warstw falistych (2-3 warstwy)"></li>
+                            <li data-uk="Тип паперу (крафт або білий)" data-en="Type of paper (kraft or white)" data-pl="Rodzaj papieru (kraft lub biały)"></li>
+                            <li data-uk="Кількість замовлення (оптові знижки)" data-en="Order quantity (bulk discounts)" data-pl="Ilość zamówienia (rabaty hurtowe)"></li>
+                            <li data-uk="Друк та персоналізація" data-en="Printing and personalization" data-pl="Drukowanie i personalizacja"></li>
+                            <li data-uk="Швидкість доставки" data-en="Delivery speed" data-pl="Szybkość dostawy"></li>
+                        </ul>
+                    </div>
+
+                    <div class="examples">
+                        <h3 data-uk="Приклади реальних замовлень:" data-en="Real Order Examples:" data-pl="Przykłady rzeczywistych zamówień:"></h3>
+                        <div class="example-item">
+                            <p><strong data-uk="Замовлення #1:" data-en="Order #1:" data-pl="Zamówienie #1:"></strong> 
+                               <span data-uk="1000 коробок 30x20x15 см, 2-шарові, крафт" data-en="1000 boxes 30x20x15 cm, 2-layer, kraft" data-pl="1000 pudełek 30x20x15 cm, 2-warstwowe, kraft"></span></p>
+                            <p data-uk="Вартість: 0.50 грн за коробку" data-en="Cost: 0.50 UAH per box" data-pl="Koszt: 0,50 UAH za pudełko"></p>
+                        </div>
+                        <div class="example-item">
+                            <p><strong data-uk="Замовлення #2:" data-en="Order #2:" data-pl="Zamówienie #2:"></strong> 
+                               <span data-uk="500 коробок 40x30x20 см, 3-шарові, білі з друком" data-en="500 boxes 40x30x20 cm, 3-layer, white with printing" data-pl="500 pudełek 40x30x20 cm, 3-warstwowe, białe z drukiem"></span></p>
+                            <p data-uk="Вартість: 1.20 грн за коробку" data-en="Cost: 1.20 UAH per box" data-pl="Koszt: 1,20 UAH za pudełko"></p>
+                        </div>
+                    </div>
+
+                    <div class="order-section">
+                        <h3 data-uk="Особливості:" data-en="Features:" data-pl="Cechy:"></h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-uk="Екологічно безпечні" data-en="Eco-friendly" data-pl="Przyjazne dla środowiska"></span></li>
+                            <li><i class="fas fa-check"></i> <span data-uk="Легко складаються та зберігаються" data-en="Easy to fold and store" data-pl="Łatwe do składania i przechowywania"></span></li>
+                            <li><i class="fas fa-check"></i> <span data-uk="Безпечні при доставці" data-en="Safe during shipping" data-pl="Bezpieczne podczas wysyłki"></span></li>
+                            <li><i class="fas fa-check"></i> <span data-uk="Можна персоналізувати" data-en="Customizable" data-pl="Można dostosować"></span></li>
+                        </ul>
+                    </div>
+
+                    <a href="contact.html" class="cta-button"><i class="fas fa-envelope"></i> <span data-uk="Зв'язатися для замовлення" data-en="Contact to Order" data-pl="Skontaktuj się, aby zamówić"></span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-uk="© 2026 UFiPak. Всі права захищені." data-en="© 2026 UFiPak. All rights reserved." data-pl="© 2026 UFiPak. Wszelkie prawa zastrzeżone."></p>
+            <div class="footer-links">
+                <a href="index.html" data-uk="Головна" data-en="Home" data-pl="Strona główna"></a>
+                <a href="contact.html" data-uk="Контакти" data-en="Contact" data-pl="Kontakt"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

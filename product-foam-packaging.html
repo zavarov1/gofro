@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пінопластова упаковка - UFiPak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-box" style="font-size: 2rem; color: var(--primary-color);"></i>
+                <span class="logo-text">UFiPak</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-uk="Головна" data-en="Home" data-pl="Strona główna"></a></li>
+                <li><a href="products.html" data-uk="Продукти" data-en="Products" data-pl="Produkty"></a></li>
+                <li><a href="services.html" data-uk="Послуги" data-en="Services" data-pl="Usługi"></a></li>
+                <li><a href="about.html" data-uk="Про нас" data-en="About" data-pl="O nas"></a></li>
+                <li><a href="contact.html" data-uk="Контакти" data-en="Contact" data-pl="Kontakt"></a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="language-selector">
+                <button onclick="switchLanguage('uk')" class="lang-btn active">УК</button>
+                <button onclick="switchLanguage('en')" class="lang-btn">EN</button>
+                <button onclick="switchLanguage('pl')" class="lang-btn">PL</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="product-detail">
+            <div class="breadcrumb">
+                <a href="index.html" data-uk="Головна" data-en="Home" data-pl="Strona główna"></a> / 
+                <a href="products.html" data-uk="Продукти" data-en="Products" data-pl="Produkty"></a> / 
+                <span data-uk="Пінопластова упаковка" data-en="Foam Packaging" data-pl="Opakowanie z pianki"></span>
+            </div>
+
+            <div class="product-header">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1578500494198-246f612d03b0?w=600" alt="Foam Packaging">
+                </div>
+                <div class="product-info">
+                    <h1 data-uk="Пінопластова упаковка" data-en="Foam Packaging" data-pl="Opakowanie z pianki"></h1>
+                    <p class="product-description" data-uk="Легка та надійна пінопластова упаковка для захисту крихких предметів. Гарантує безпеку ваших товарів під час перевезення." data-en="Lightweight and reliable foam packaging to protect fragile items. Ensures safety of your goods during transportation." data-pl="Lekkie i niezawodne opakowanie z pianki do ochrony krucho towaru. Zapewnia bezpieczeństwo Twoich towarów podczas transportu."></p>
+                    
+                    <div class="pricing-factors">
+                        <h3 data-uk="Чинники ціноутворення:" data-en="Pricing Factors:" data-pl="Czynniki ceny:"></h3>
+                        <ul>
+                            <li data-uk="Розміри упаковки" data-en="Packaging size" data-pl="Rozmiar opakowania"></li>
+                            <li data-uk="Товщина пінопласту (10-50 мм)" data-en="Foam thickness (10-50 mm)" data-pl="Grubość pianki (10-50 mm)"></li>
+                            <li data-uk="Тип пінопласту (EPE, EPS)" data-en="Foam type (EPE, EPS)" data-pl="Rodzaj pianki (EPE, EPS)"></li>
+                            <li data-uk="Кількість елементів" data-en="Number of elements" data-pl="Liczba elementów"></li>
+                            <li data-uk="Спеціальні крої та форми" data-en="Special cuts and shapes" data-pl="Specjalne cięcia i kształty"></li>
+                            <li data-uk="Обсяг замовлення" data-en="Order volume" data-pl="Ilość zamówienia"></li>
+                        </ul>
+                    </div>
+
+                    <div class="examples">
+                        <h3 data-uk="Приклади реальних замовлень:" data-en="Real Order Examples:" data-pl="Przykłady rzeczywistych zamówień:"></h3>
+                        <div class="example-item">
+                            <p><strong data-uk="Замовлення #1:" data-en="Order #1:" data-pl="Zamówienie #1:"></strong> 
+                               <span data-uk="1000 листів 1000x500 мм, товщина 20 мм" data-en="1000 sheets 1000x500 mm, thickness 20 mm" data-pl="1000 arkuszy 1000x500 mm, grubość 20 mm"></span></p>
+                            <p data-uk="Вартість: 15 грн за лист" data-en="Cost: 15 UAH per sheet" data-pl="Koszt: 15 UAH za arkusz"></p>
+                        </div>
+                        <div class="example-item">
+                            <p><strong data-uk="Замовлення #2:" data-en="Order #2:" data-pl="Zamówienie #2:"></strong> 
+                               <span data-uk="500 корзин, спеціальні крої, товщина 30 мм" data-en="500 baskets, special cuts, thickness 30 mm" data-pl="500 koszyków, specjalne cięcia, grubość 30 mm"></span></p>
+                            <p data-uk="Вартість: 45 грн за блок" data-en="Cost: 45 UAH per block" data-pl="Koszt: 45 UAH za blok"></p>
+                        </div>
+                    </div>
+
+                    <div class="order-section">
+                        <h3 data-uk="Особливості:" data-en="Features:" data-pl="Cechy:"></h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-uk="Відмінний захист при ударах" data-en="Excellent shock protection" data-pl="Doskonała ochrona przed wstrząsami"></span></li>
+                            <li><i class="fas fa-check"></i> <span data-uk="Легко підігнати під розмір" data-en="Easy to adjust to size" data-pl="Łatwo dostosowuje się do rozmiaru"></span></li>
+                            <li><i class="fas fa-check"></i> <span data-uk="Низька вага, не збільшує доставку" data-en="Low weight, doesn't increase shipping" data-pl="Niska masa, nie zwiększa wysyłki"></span></li>
+                            <li><i class="fas fa-check"></i> <span data-uk="Здатен до повторного використання" data-en="Reusable" data-pl="Wielokrotnego użytku"></span></li>
+                        </ul>
+                    </div>
+
+                    <a href="contact.html" class="cta-button"><i class="fas fa-envelope"></i> <span data-uk="Зв'язатися для замовлення" data-en="Contact to Order" data-pl="Skontaktuj się, aby zamówić"></span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-uk="© 2026 UFiPak. Всі права захищені." data-en="© 2026 UFiPak. All rights reserved." data-pl="© 2026 UFiPak. Wszelkie prawa zastrzeżone."></p>
+            <div class="footer-links">
+                <a href="index.html" data-uk="Головна" data-en="Home" data-pl="Strona główna"></a>
+                <a href="contact.html" data-uk="Контакти" data-en="Contact" data-pl="Kontakt"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
